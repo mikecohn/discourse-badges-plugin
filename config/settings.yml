@@ -1,0 +1,10 @@
+plugins:
+  post_badges_enabled:
+    default: true
+    client: true
+  post_badges_desktop:
+    default: 3
+    min: 1
+  post_badges_mobile:
+    default: 3
+    min: 1

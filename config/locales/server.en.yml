@@ -1,0 +1,5 @@
+en:
+  site_settings:
+    post_badges_enabled: "Enable post badges?"
+    post_badges_desktop: "Limit badges on desktop view"
+    post_badges_mobile: "Limit badges on mobile view"
