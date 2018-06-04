@@ -1,0 +1,24 @@
+@import "desktop/user-card";
+
+.post-badges {
+  clear: both;
+
+  > span {
+    margin-right: 3px;
+  }
+
+  .user-badge {
+    background: scale-color($user_card_background, $lightness: -5%);
+    border: 1px solid $primary-low;
+    color: $user_card_primary;
+
+    img, .fa {
+      margin-right: 5px;
+    }
+  }
+
+  .more-user-badges {
+    @extend .user-badge;
+    padding: 3px 8px;
+  }
+}
