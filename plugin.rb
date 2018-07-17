@@ -29,7 +29,7 @@ after_initialize {
   end
 
   add_to_serializer(:post, :user_badges) {
-    if @topic_view && object.user.present?
+    if object.user.present?
 
       badge_count   = object.user.badge_count
       mobile_limit  = SiteSetting.post_badges_mobile
