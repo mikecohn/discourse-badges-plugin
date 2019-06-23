@@ -1,0 +1,35 @@
+// @import "desktop/components/user-card";
+
+.post-badges {
+  clear: both;
+  padding: 5px 10px 0;
+  display: flex;
+
+  > span {
+    margin-right: 3px;
+  }
+
+  .user-badge {
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: $primary-very-low;
+    border: 1px solid $primary-low;
+    color: $primary;
+
+    img, .fa {
+      margin-right: 5px;
+    }
+  }
+
+  .more-user-badges {
+    @extend .user-badge;
+    padding: 3px 8px;
+    background-color: $secondary;
+
+    a {
+      color: $primary;
+    }
+  }
+}

@@ -1,12 +1,13 @@
 # name: post-badges
-# version: 0.1
+# version: 0.2.0
 # author: Muhlis Budi Cahyono (muhlisbc@gmail.com)
 # url: https://github.com/mikecohn/discourse-badges-plugin
 
 enabled_site_setting :post_badges_enabled
 
-register_asset "stylesheets/common/post-badges.scss"
-register_asset "stylesheets/mobile/post-badges.scss", :mobile
+%i(common desktop mobile).each do |type|
+  register_asset "stylesheets/post-badges/#{type}.scss", type
+end
 
 after_initialize {
 

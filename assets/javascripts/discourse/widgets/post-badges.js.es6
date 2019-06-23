@@ -45,7 +45,9 @@ export default createWidget("post-badges", {
 
     if (moreCount > 0) {
       const text = I18n.t("badges.more_badges", {count: moreCount});
-      result.push(h("a.btn.more-user-badges", { href: `/u/${attrs.username}/badges` }, text));
+      const more = h("a", { href: `/u/${attrs.username}/badges` }, text);
+
+      result.push(h("span.more-user-badges", more));
     }
 
     return result;
